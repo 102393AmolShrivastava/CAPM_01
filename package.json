@@ -16,6 +16,14 @@
   "cds": {
     "watch": {
       "port": 4004
+    },
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "./db/mydb.db"
+        }
+      }
     }
   },
   "scripts": {

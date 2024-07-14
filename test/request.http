@@ -1,0 +1,39 @@
+### API TO GET REQUESTS
+GET http://localhost:4004/odata/v4/request/Requests
+
+###
+
+### API TO POST REQUEST 01
+POST http://localhost:4004/odata/v4/request/Requests
+Content-Type: application/json
+
+{
+     "crName":"CR_01",
+    "region": "REGION_01",
+    "subRegion": "SUB_REGION_01",
+    "crDescription": "CR DESCRIPTION VALUE FOR 01 REQUEST"
+}
+
+### API TO POST REQUEST 02
+POST http://localhost:4004/odata/v4/request/Requests
+Content-Type: application/json
+
+{
+     "crName":"CR_02",
+    "region": "REGION_02",
+    "subRegion": "SUB_REGION_02",
+    "crDescription": "CR DESCRIPTION VALUE FOR 02 REQUEST"
+}
+
+### API TO POST REQUEST 03
+POST http://localhost:4004/odata/v4/request/Requests
+Content-Type: application/json
+
+{
+     "crName":"CR_03",
+    "region": "REGION_03",
+    "subRegion": "SUB_REGION_03",
+    "crDescription": "CR DESCRIPTION VALUE FOR 03 REQUEST"
+}
+
+###

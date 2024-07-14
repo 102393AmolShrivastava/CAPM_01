@@ -1,7 +1,8 @@
 ### API TO GET REQUESTS
 GET http://localhost:4004/odata/v4/request/Requests
 
-###
+### API TO GET METADATA
+GET http://localhost:4004/odata/v4/request/$metadata 
 
 ### API TO POST REQUEST 01
 POST http://localhost:4004/odata/v4/request/Requests

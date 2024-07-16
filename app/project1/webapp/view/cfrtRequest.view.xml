@@ -1,0 +1,20 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+controllerName="com.tcs.hr.ui.project1.controllers.cfrtRequest"
+xmlns="sap.m"
+> 
+   <Page showNavButton="true" navButtonPress=".onBack">
+     <SplitApp> 
+        <masterPages>
+            <Page title="CFRT List"> 
+                <List id="cfrtRequestList" />
+            </Page>
+        </masterPages>
+
+        <detailPages>
+            <Page tilte="CFRT Request">
+                
+            </Page>
+        </detailPages>
+    </SplitApp>
+   </Page>
+</mvc:View>

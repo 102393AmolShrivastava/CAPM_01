@@ -17,7 +17,7 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "/odata/v4/request/",
+        "uri": "/odata/v4/request/Requests/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -85,7 +85,14 @@
         }
       ]
     },
+    "rootView": {
+      "viewName": "com.tcs.hr.ui.project1.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    },
     "routing": {
+      
       "config": {
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
@@ -95,13 +102,42 @@
         "controlId": "app",
         "clearControlAggregation": false
       },
+      
       "routes": [
         {
           "name": "RouteHome",
           "pattern": ":?query:",
-          "target": [
-            "TargetHome"
-          ]
+          "target":"TargetHome"
+        },
+        {
+          "name": "CAS_REQUEST",
+          "pattern": "CAS_REQUEST",
+          "target": "casRequest"
+        },
+        {
+          "name": "CFRT_REQUEST",
+          "pattern": "CFRT_REQUEST",
+          "target": "cfrtRequest"
+        },
+        {
+          "name": "CTO_REQUEST",
+          "pattern": "CTO_REQUEST",
+          "target": "ctoRequest"
+        },
+        {
+          "name": "DASHBOARD",
+          "pattern": "DASHBOARD",
+          "target": "dashboard"
+        },
+        {
+          "name": "MASTER_DATA",
+          "pattern": "MASTER_DATA",
+          "target": "masterData"
+        },
+        {
+          "name": "UNDER_DEV",
+          "pattern": "UNDER_DEV",
+          "target": "underDev"
         }
       ],
       "targets": {
@@ -111,14 +147,38 @@
           "clearControlAggregation": false,
           "viewId": "Home",
           "viewName": "Home"
+        },
+        "casRequest": {
+          "viewName": "casRequest",
+          "viewId": "casRequestPage",
+          "viewType": "XML"
+        },
+        "cfrtRequest":  {
+          "viewName": "cfrtRequest",
+          "viewId": "cfrtRequestPage",
+          "viewType": "XML"
+        },
+        "ctoRequest":  {
+          "viewName": "ctoRequest",
+          "viewId": "ctoRequestPage",
+          "viewType": "XML"
+        },
+        "dashboard":  {
+          "viewName": "dashboard",
+          "viewId": "dashboardPage",
+          "viewType": "XML"
+        },
+        "masterData":  {
+          "viewName": "masterData",
+          "viewId": "masterDataPage",
+          "viewType": "XML"
+        },
+        "underDev":  {
+          "viewId": "underDevelopmentPage",
+          "viewName": "underDev",
+          "viewType": "XML"
         }
       }
-    },
-    "rootView": {
-      "viewName": "com.tcs.hr.ui.project1.view.App",
-      "type": "XML",
-      "async": true,
-      "id": "App"
     }
   }
 }

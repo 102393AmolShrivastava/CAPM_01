@@ -1,7 +1,39 @@
-<mvc:View controllerName="com.tcs.hr.ui.project1.controller.Home"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+<mvc:View controllerName="com.tcs.hr.ui.project1.controllers.Home"
+    xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
+    <Page id="page" title="Dashboard">
+        <!-- <headerContent>
+            <Button text="CREATE REQUEST" press=".createRequest" type="Emphasized" />
+        </headerContent> 
+        <List id="requestList"></List> -->
+        <l:Grid defaultSpan="XL4 L4 M6 S12" width="50%" class="sapUiMediumMarginTop"> 
+        <GenericTile id="cas_tile" header="CAS" press=".tilePressed"> 
+           <TileContent> 
+                <core:Icon src="sap-icon://add" />
+           </TileContent>
+        </GenericTile>
+        <GenericTile id="cto_tile" header="CTO" press=".tilePressed">
+            <TileContent> 
+                <core:Icon src="sap-icon://add-activity" />
+           </TileContent>
+        </GenericTile>
+        <GenericTile id="cfrt_tile" header="CFRT" press=".tilePressed">
+           <TileContent> 
+                <core:Icon src="sap-icon://add-activity-2" />
+           </TileContent>
+        </GenericTile>
+        <GenericTile id="dashboard_tile" header="DASHBOARD" press=".tilePressed"> 
+              <TileContent> 
+                <core:Icon src="sap-icon://course-book" />
+           </TileContent>
+        </GenericTile>
+        <GenericTile id="masterData_tile" header="Master Data" press=".tilePressed">
+              <TileContent> 
+                <core:Icon src="sap-icon://database" />
+           </TileContent>
+        </GenericTile>
+
+        </l:Grid>
+
     </Page>
 </mvc:View>

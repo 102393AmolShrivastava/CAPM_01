@@ -1,0 +1,6 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.tcs.hr.ui.project1.controllers.underDev" 
+xmlns="sap.m">
+    <Page id="underDev">
+        <Text text="This view is under development" />
+    </Page>
+</mvc:View>

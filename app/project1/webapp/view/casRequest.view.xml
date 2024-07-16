@@ -1,0 +1,20 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+controllerName="com.tcs.hr.ui.project1.controllers.casRequest"
+xmlns="sap.m"
+> 
+   <Page showNavButton="true" navButtonPress=".onBack">
+    <SplitApp> 
+        <masterPages>
+            <Page title="CAS List"> 
+                <List id="casRequestList" />
+            </Page>
+        </masterPages>
+
+        <detailPages>
+            <Page tilte="CAS Request">
+                
+            </Page>
+        </detailPages>
+    </SplitApp>
+   </Page>
+</mvc:View>

@@ -1,11 +1,11 @@
 sap.ui.define(
     [
-        "sap/ui/core/mvc/Controller"
+        "com/tcs/hr/ui/project1/controllers/BaseController"
     ],
     function(BaseController) {
       "use strict";
   
-      return BaseController.extend("com.tcs.hr.ui.project1.controller.App", {
+      return BaseController.extend("com.tcs.hr.ui.project1.controllers.App", {
         onInit: function() {
         }
       });

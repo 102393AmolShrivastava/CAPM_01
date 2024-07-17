@@ -6,7 +6,11 @@ xmlns="sap.m"
         <SplitApp> 
         <masterPages>
             <Page title="CTO List"> 
-                <List id="ctoRequestList" />
+                <List id="ctoRequestList" items="{
+                    path:'/Requests'
+                }">
+                    <StandardListItem title="{crName}" info="{crDescription}" />
+                </List>
             </Page>
         </masterPages>
 

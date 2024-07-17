@@ -14,10 +14,10 @@
       "id": "@sap/generator-fiori:basic",
       "version": "1.14.1",
       "toolsId": "55403d73-96f6-425a-87e6-6d07e0449f45"
-    },
+    },  
     "dataSources": {
       "mainService": {
-        "uri": "/odata/v4/request/Requests/",
+        "uri": "/odata/v4/request/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -70,12 +70,13 @@
       },
       "": {
         "dataSource": "mainService",
-        "preload": true,
         "settings": {
           "operationMode": "Server",
           "autoExpandSelect": true,
           "earlyRequests": true
-        }
+        },
+        "preload": true,
+        "type": "sap.ui.model.odata.v4.ODataModel"
       }
     },
     "resources": {

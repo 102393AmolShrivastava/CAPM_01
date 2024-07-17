@@ -5,6 +5,7 @@ sap.ui.define([
 ], function(BaseController, JSONModel) {
     return BaseController.extend('com.tcs.hr.ui.project1.controllers.dashboard', {
         onInit: function() {
+            this.oRouter= this.getOwnerComponent().getRouter();
             console.log('Inside Dashboard controller');
             let oModel = new JSONModel();
             let typeVh = this.getTypeArr();
